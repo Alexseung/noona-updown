@@ -22,6 +22,7 @@ inputArea.addEventListener('focus', () => {
 });
 function randomNum() {
   computerNum = Math.floor(Math.random() * 100 + 1);
+  console.log(computerNum);
 }
 
 //enter키 입력 무조건...없으면 불편함
@@ -72,6 +73,7 @@ function play() {
     //숫가자 맞으면 img를 변경해주어야 하기때문에 img도 변수선언하여 이렇게 가져오기
     img.src =
       'https://img1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/7YmD/image/rfz9SSvcbysKDLNtM9ZkR2C0_m4.jpg';
+    return;
   }
 
   history.push(inputValue);
