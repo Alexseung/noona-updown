@@ -22,7 +22,7 @@ inputArea.addEventListener('focus', () => {
 });
 function randomNum() {
   computerNum = Math.floor(Math.random() * 100 + 1);
-  console.log(computerNum);
+  // console.log(computerNum);
 }
 
 //enter키 입력 무조건...없으면 불편함
