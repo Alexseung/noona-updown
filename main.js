@@ -24,6 +24,7 @@ function randomNum() {
   computerNum = Math.floor(Math.random() * 100 + 1);
 }
 
+//enter키 입력 무조건...없으면 불편함
 function handleKeyDown(event) {
   if (event.key === 'Enter') {
     play();
