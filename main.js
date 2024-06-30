@@ -22,7 +22,6 @@ inputArea.addEventListener('focus', () => {
 });
 function randomNum() {
   computerNum = Math.floor(Math.random() * 100 + 1);
-  console.log(computerNum);
 }
 
 function handleKeyDown(event) {
