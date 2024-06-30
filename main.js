@@ -65,11 +65,11 @@ function play() {
   chanceArea.textContent = `남은기회: ${chances}번`;
 
   if (inputValue < computerNum) {
-    result.textContent = '업업';
+    result.textContent = 'Up';
   } else if (inputValue > computerNum) {
-    result.textContent = '다운다운';
+    result.textContent = 'Down';
   } else {
-    result.textContent = '맞음';
+    result.textContent = 'Correct';
     //숫가자 맞으면 img를 변경해주어야 하기때문에 img도 변수선언하여 이렇게 가져오기
     img.src =
       'https://img1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/7YmD/image/rfz9SSvcbysKDLNtM9ZkR2C0_m4.jpg';
@@ -92,6 +92,8 @@ function play() {
   }
 
   if (gameOver == true) {
+    playBtn.disabled = true;
+    inputArea.removeEventListener('keydown', handleKeyDown);
     playBtn.disabled = true;
     result.textContent = '또 하쉴??';
     if (inputValue != computerNum) {
