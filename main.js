@@ -64,9 +64,9 @@ function play() {
   chanceArea.textContent = `남은기회: ${chances}번`;
 
   if (inputValue < computerNum) {
-    result.textContent = 'up';
+    result.textContent = '업업';
   } else if (inputValue > computerNum) {
-    result.textContent = 'down';
+    result.textContent = '다운다운';
   } else {
     result.textContent = '맞음';
     //숫가자 맞으면 img를 변경해주어야 하기때문에 img도 변수선언하여 이렇게 가져오기
@@ -78,7 +78,7 @@ function play() {
 
   //imgDesign.style.opacity로 현재 값을 가져온다 (0), parseFloat()를 사용하여 현재 값을 소수점으로 변경 0은 0.0, 여기에 0.15씩 더하여
   //불투명도값을 올린다
-  imgDesign.style.opacity = parseFloat(imgDesign.style.opacity) + 0.15;
+  imgDesign.style.opacity = parseFloat(imgDesign.style.opacity) + 0.16;
 
   if (chances < 1) {
     gameOver = true;
