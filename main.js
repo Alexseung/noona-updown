@@ -48,6 +48,8 @@ function reset() {
   img.src =
     'https://ojsfile.ohmynews.com/CRI_T_IMG/2018/0813/A0002462761_T.jpg';
   inputArea.addEventListener('keydown', handleKeyDown);
+  result.classList.remove('vivid');
+  resetBtn.classList.remove('vivid');
 }
 
 function play() {
@@ -76,6 +78,8 @@ function play() {
     imgDesign.style.opacity = 0.8;
     inputArea.removeEventListener('keydown', handleKeyDown);
     playBtn.disabled = true;
+    result.classList.add('vivid');
+    resetBtn.classList.add('vivid');
 
     return;
   }
@@ -96,6 +100,9 @@ function play() {
     inputArea.removeEventListener('keydown', handleKeyDown);
     playBtn.disabled = true;
     result.textContent = '또 하쉴??';
+    result.classList.add('vivid');
+    resetBtn.classList.add('vivid');
+
     if (inputValue != computerNum) {
       alert(`아쉽네!!! ${computerNum}인데!`);
     }

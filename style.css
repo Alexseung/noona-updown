@@ -75,3 +75,8 @@ body {
   margin-top: 10px;
   font-size: 20px;
 }
+
+.vivid {
+  position: relative;
+  z-index: 2;
+}
